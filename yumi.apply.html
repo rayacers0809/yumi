@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌸 YUMI 팩션 지원서</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+    :root {
+      --bg1: #fbc2eb;
+      --bg2: #a6c1ee;
+      --card: rgba(255,255,255,0.95);
+      --line: rgba(0,0,0,0.15);
+      --text: #333;
+      --accent: #ff9ecd;
+      --accent2: #ffc3a0;
+      --shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    body {
+      margin: 0;
+      font-family: 'Jua', sans-serif;
+      background: linear-gradient(135deg, var(--bg1), var(--bg2));
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    .container {
+      width: 100%;
+      max-width: 800px;
+      background: var(--card);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 30px;
+      animation: fadeIn 0.7s ease;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+    p.subtitle {
+      text-align: center;
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 25px;
+    }
+    .rules {
+      background: #fff7fb;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 15px 20px;
+      font-size: 0.95rem;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      font-size: 1rem;
+      outline: none;
+    }
+    textarea {
+      resize: none;
+      min-height: 100px;
+    }
+    button {
+      width: 100%;
+      background: var(--accent);
+      color: white;
+      font-size: 1.2rem;
+      padding: 15px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: var(--accent2);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌸 YUMI 팩션 지원서</h1>
+    <p class="subtitle">귀엽고 고급스러운 유미 팩션에 오신 걸 환영합니다!</p>
+
+    <div class="rules">
+      <strong>📌 지원 안내</strong><br>
+      ◽ 지원서 작성 날짜 기준 15세 이상<br>
+      ◽ 마이크와 영상 녹화 사용은 필수입니다.<br>
+      ◽ 오랫동안 함께 서버 플레이를 하실 분.<br><br>
+      <strong>[ 📃 면접 절차 및 과정 📃 ]</strong><br>
+      STEP 1️⃣ : 서류 면접<br>
+      STEP 2️⃣ : 음성 면접<br>
+      STEP 3️⃣ : 내부 회의 결과 후 [최종 채용]<br>
+      STEP 4️⃣ : 최종 채용 후 팩션 가입 절차 안내 (추후 팩션 교육 진행)<br><br>
+      ◽ 1차 합격 시 신분증 및 학생증을 지참하여 주시길 바랍니다.<br>
+      ◽ 불합격 시 불합격 사유는 알려 드릴 수 없습니다.<br>
+      ◽ 불합격 시 불합격 한 날짜 기준 3일 뒤에 재지원이 가능합니다.<br>
+      ◽ 기본적인 예의는 갖추고 지원 부탁 드립니다.<br>
+      ◽ "철새" / "개념" 없으신 분은 받지 않습니다.<br>
+      ◽ 지정된 면접 시간 불참, 합격 후 연락 두절 시 지원 자격 박탈됩니다.<br>
+      ◽ 지원서에 거짓된 내용을 작성 시 블랙리스트 처리될 수 있습니다.
+    </div>
+
+    <form id="yumiForm">
+      <div class="form-group"><label>닉네임 *</label><input type="text" name="닉네임" required></div>
+      <div class="form-group"><label>디스코드 아이디 *</label><input type="text" name="디스코드" placeholder="예: YUMI#1234" required></div>
+      <div class="form-group">
+        <label>성별 *</label>
+        <select name="성별" required>
+          <option value="">선택</option>
+          <option value="남자">남자</option>
+          <option value="여자">여자</option>
+        </select>
+      </div>
+      <div class="form-group"><label>FiveM 서버 경력 및 팩션 경력 (자세히) *</label><textarea name="경력" required></textarea></div>
+      <div class="form-group">
+        <label>마이크 및 영상 녹화 가능 여부 *</label>
+        <select name="마이크영상" required>
+          <option value="">선택</option>
+          <option value="예">예</option>
+          <option value="아니오">아니오</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>RP 이해도 *</label>
+        <select name="RP이해도" required>
+          <option value="">선택</option>
+          <option value="상">상</option>
+          <option value="중">중</option>
+          <option value="하">하</option>
+        </select>
+      </div>
+      <div class="form-group"><label>RP 정의 예시 (3가지)</label><textarea name="RP정의"></textarea></div>
+      <div class="form-group"><label>BAD-RP 예시 (3가지)</label><textarea name="BADRP"></textarea></div>
+      <div class="form-group"><label>NON-RP 예시 (3가지)</label><textarea name="NONRP"></textarea></div>
+      <div class="form-group"><label>지원 동기 *</label><textarea name="지원동기" required></textarea></div>
+      <div class="form-group"><label>본인 장점 *</label><textarea name="장점" required></textarea></div>
+      <div class="form-group"><label>본인 단점 *</label><textarea name="단점" required></textarea></div>
+      <div class="form-group"><label>포부 *</label><textarea name="포부" required></textarea></div>
+      <button type="submit">✨ 지원하기 ✨</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("yumiForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      const data = {};
+      formData.forEach((v, k) => data[k] = v);
+
+      try {
+        const res = await fetch("/api/webhook", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data)
+        });
+        if (res.ok) {
+          alert("지원서가 제출되었습니다!");
+          e.target.reset();
+        } else {
+          alert("제출 실패. 관리자에게 문의해주세요.");
+        }
+      } catch (err) {
+        alert("에러 발생: " + err.message);
+      }
+    });
+  </script>
+</body>
+</html>
