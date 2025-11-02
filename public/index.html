@@ -3,55 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🌸 YUMI 팩션 지원서</title>
+  <title>🚧 한국도로공사 지원서</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>🌸 YUMI 팩션 지원서</h1>
-    <p class="subtitle">귀엽고 고급스러운 유미 팩션에 오신 걸 환영합니다!</p>
 
-    <div class="rules">
+    <!-- 브랜드 헤더 영역 -->
+    <header class="brand-header">
+      <!-- 로고 / 마스코트 넣는 자리 -->
+      <!-- 투명 배경 PNG를 /assets/mascot.png 같은 경로로 넣어두고 src만 바꿔주면 됨 -->
+      <img
+        src="/assets/mascot.png"
+        alt="한국도로공사 마스코트"
+        class="brand-logo"
+      />
+      <div class="brand-text">
+        <h1>🚧 한국도로공사 지원서</h1>
+        <p class="subtitle">안전하고 신뢰받는 도로 유지 · 구조 지원팀에 오신 걸 환영합니다.</p>
+      </div>
+    </header>
+
+    <!-- 안내 / 규정 -->
+    <section class="rules">
       <strong>📌 지원 안내</strong><br>
-      ◽ 지원서 작성 날짜 기준 15세 이상<br>
-      ◽ 마이크와 영상 녹화 사용은 필수입니다.<br>
-      ◽ 오랫동안 함께 서버 플레이를 하실 분.<br><br>
-      <strong>[ 📃 면접 절차 및 과정 📃 ]</strong><br>
-      STEP 1️⃣ : 서류 면접<br>
-      STEP 2️⃣ : 음성 면접<br>
-      STEP 3️⃣ : 내부 회의 결과 후 [최종 채용]<br>
-      STEP 4️⃣ : 최종 채용 후 팩션 가입 절차 안내 (추후 팩션 교육 진행)<br><br>
-      ◽ 1차 합격 시 신분증 및 학생증을 지참하여 주시길 바랍니다.<br>
-      ◽ 불합격 시 불합격 사유는 알려 드릴 수 없습니다.<br>
-      ◽ 불합격 시 불합격 한 날짜 기준 3일 뒤에 재지원이 가능합니다.<br>
-      ◽ 기본적인 예의는 갖추고 지원 부탁 드립니다.<br>
-      ◽ "철새" / "개념" 없으신 분은 받지 않습니다.<br>
-      ◽ 지정된 면접 시간 불참, 합격 후 연락 두절 시 지원 자격 박탈됩니다.<br>
-      ◽ 지원서에 거짓된 내용을 작성 시 블랙리스트 처리될 수 있습니다.
-    </div>
+      ◽ 지원서 작성 날짜 기준 만 15세 이상<br>
+      ◽ 마이크 / 화면 녹화는 면접 시 필수입니다.<br>
+      ◽ 단기간이 아닌 오래 함께 활동 가능한 분을 우대합니다.<br><br>
 
-    <form id="yumiForm">
-      <div class="form-group"><label>닉네임 *</label><input type="text" name="닉네임" required></div>
-      <div class="form-group"><label>디스코드 아이디 *</label><input type="text" name="디스코드" placeholder="예: YUMI#1234" required></div>
+      <strong>[ 📃 면접 절차 및 과정 📃 ]</strong><br>
+      STEP 1️⃣ : 서류 검토 (현재 페이지 제출)<br>
+      STEP 2️⃣ : 음성 인터뷰 (디스코드)<br>
+      STEP 3️⃣ : 내부 협의 및 최종 합격 통보<br>
+      STEP 4️⃣ : 최종 합격자 교육 · 부서 배치 안내<br><br>
+
+      ◽ 1차 합격 시 본인 확인용 신분증 / 학생증 확인이 있을 수 있습니다.<br>
+      ◽ 불합격 사유는 개별 안내되지 않습니다.<br>
+      ◽ 불합격자는 불합격 날짜 기준 3일 경과 후 재지원 가능합니다.<br>
+      ◽ 기본적인 예의 / 협업 태도가 부족하다고 판단될 경우 탈락될 수 있습니다.<br>
+      ◽ 무단 이탈(일명 "철새") 또는 비매너 플레이 기록이 있는 경우 거절될 수 있습니다.<br>
+      ◽ 지정된 면접 시간 불참, 합격 후 연락 두절 시 지원 자격이 취소될 수 있습니다.<br>
+      ◽ 허위 사실 기재 시 블랙리스트로 등록될 수 있습니다.
+    </section>
+
+    <!-- 지원서 폼 -->
+    <form id="koreaRoadForm" class="apply-form">
       <div class="form-group">
-        <label>성별 *</label>
+        <label>닉네임 <span class="req">*</span></label>
+        <input type="text" name="닉네임" required>
+      </div>
+
+      <div class="form-group">
+        <label>디스코드 아이디 <span class="req">*</span></label>
+        <input type="text" name="디스코드" placeholder="예: RoadCat#1234" required>
+      </div>
+
+      <div class="form-group">
+        <label>성별 <span class="req">*</span></label>
         <select name="성별" required>
           <option value="">선택</option>
           <option value="남자">남자</option>
           <option value="여자">여자</option>
         </select>
       </div>
-      <div class="form-group"><label>FiveM 서버 경력 및 팩션 경력 (자세히) *</label><textarea name="경력" required></textarea></div>
+
       <div class="form-group">
-        <label>마이크 및 영상 녹화 가능 여부 *</label>
+        <label>나이 / 생년 (선택)</label>
+        <input type="text" name="나이" placeholder="예: 18 / 2007">
+      </div>
+
+      <div class="form-group">
+        <label>FiveM 서버 경력 및 팩션(조직) 활동 경력 (자세히) <span class="req">*</span></label>
+        <textarea name="경력" required placeholder="어떤 서버에서 어떤 역할(경찰, 조직, 구조팀 등)을 했는지 자세히 적어주세요."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>마이크 / 화면 녹화 가능 여부 <span class="req">*</span></label>
         <select name="마이크영상" required>
           <option value="">선택</option>
           <option value="예">예</option>
           <option value="아니오">아니오</option>
         </select>
       </div>
+
       <div class="form-group">
-        <label>RP 이해도 *</label>
+        <label>RP 이해도 <span class="req">*</span></label>
         <select name="RP이해도" required>
           <option value="">선택</option>
           <option value="상">상</option>
@@ -59,20 +95,56 @@
           <option value="하">하</option>
         </select>
       </div>
-      <div class="form-group"><label>RP 정의 예시 (3가지)</label><textarea name="RP정의"></textarea></div>
-      <div class="form-group"><label>BAD-RP 예시 (3가지)</label><textarea name="BADRP"></textarea></div>
-      <div class="form-group"><label>NON-RP 예시 (3가지)</label><textarea name="NONRP"></textarea></div>
-      <div class="form-group"><label>지원 동기 *</label><textarea name="지원동기" required></textarea></div>
-      <div class="form-group"><label>본인 장점 *</label><textarea name="장점" required></textarea></div>
-      <div class="form-group"><label>본인 단점 *</label><textarea name="단점" required></textarea></div>
-      <div class="form-group"><label>포부 *</label><textarea name="포부" required></textarea></div>
-      <button type="submit">✨ 지원하기 ✨</button>
+
+      <div class="form-group">
+        <label>RP가 무엇이라고 생각하나요? (예시 3가지)</label>
+        <textarea name="RP정의" placeholder="ex) 상황에 맞는 말투 유지 / 현실성 있는 행동 / 캐릭터 설정 일관성 등"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>BAD-RP라고 생각하는 행동 예시 (3가지)</label>
+        <textarea name="BADRP" placeholder="ex) 총 맞고 바로 도주함 / 설정 없는 초능력 주장 / 말 안 통할 정도로 과몰입 등"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>NON-RP라고 생각하는 행동 예시 (3가지)</label>
+        <textarea name="NONRP" placeholder="ex) 메타 / 공대장식 콜 / 현실정보 끌어오기 등"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>지원 동기 <span class="req">*</span></label>
+        <textarea name="지원동기" required placeholder="왜 한국도로공사에 지원하셨나요?"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>본인 장점 <span class="req">*</span></label>
+        <textarea name="장점" required placeholder="성격, 협동, 상황 대처 능력 등"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>본인 단점 <span class="req">*</span></label>
+        <textarea name="단점" required placeholder="개선하려는 부분도 함께 적어주시면 좋아요."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>포부 / 각오 <span class="req">*</span></label>
+        <textarea name="포부" required placeholder="합류하게 된다면 어떤 역할을 하고 싶은지, 목표가 뭔지 알려주세요."></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">🚧 지원서 제출하기</button>
     </form>
   </div>
 
+  <footer class="footer">
+    <p>© 한국도로공사 RP 팀 선발 전형</p>
+    <p class="footnote">※ 제출 즉시 내부 검토가 시작되며, 허위 기재 시 선발 제한될 수 있습니다.</p>
+  </footer>
+
   <script>
-    document.getElementById("yumiForm").addEventListener("submit", async (e) => {
+    // 제출 스크립트
+    document.getElementById("koreaRoadForm").addEventListener("submit", async (e) => {
       e.preventDefault();
+
       const formData = new FormData(e.target);
       const data = {};
       formData.forEach((v, k) => data[k] = v);
@@ -83,11 +155,12 @@
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(data)
         });
+
         if (res.ok) {
-          alert("지원서가 제출되었습니다!");
+          alert("제출 완료! 디스코드로 후속 안내를 드리겠습니다.");
           e.target.reset();
         } else {
-          alert("제출 실패. 관리자에게 문의해주세요.");
+          alert("제출에 실패했습니다. 관리자에게 문의해주세요.");
         }
       } catch (err) {
         alert("에러 발생: " + err.message);
